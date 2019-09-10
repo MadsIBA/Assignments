@@ -6,7 +6,6 @@ if (temp == "F2C") {
   //Fahrenheit to Celcius
   let fahrenheit = Number(prompt("Convert Fahrenheit to Celcius:")); //User Input
 
-
   if (isNaN(fahrenheit)) {
     document.write("Write a number instead of " + fahrenheit);
   }
@@ -41,7 +40,6 @@ else if (temp == "C2F") {
         document.write(celcius + "°C is equal to " + Math.round(c2f()) + "°F");
     }
 }
-
 else {
   document.write("Write F2C or C2F");
 }

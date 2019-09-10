@@ -21,3 +21,32 @@ document.write("<br>");
 document.write(y)
 document.write("<br>");
 document.write(z);
+
+
+/*
+'use strict';
+const VAT = 25;
+
+const addVat = function(a) {
+    return a * (1 + VAT / 100);
+}
+
+const subVat = function(a) {
+    return a / (1 + VAT / 100);
+}
+
+const calcVat = function(a) {
+    return a - a / (1 + VAT / 100);
+}
+
+--------------------
+
+'use strict';
+var amount = Number(prompt('Enter Amount'));
+var inclVat = addVat(amount);
+var exclVat = subVat(inclVat);
+console.log('Amount incl vat: ' + inclVat);
+console.log('Amount excl vat: ' + exclVat);
+console.log('Vat: ' + calcVat(inclVat));
+
+*/
