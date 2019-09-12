@@ -88,7 +88,6 @@ else
 
 const myFunc = function (item) {
   return item = dice[0]
-
 }
 
 
