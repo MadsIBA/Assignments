@@ -93,3 +93,40 @@ const myFunc = function (item) {
 
 console.log(dice);
 console.log(dice.every(myFunc));
+
+
+
+//Teacher Solution
+/*
+'use strict';
+
+const hallo = function(item, idx, contarr) {
+    console.log(contarr);
+    return item === contarr[0];
+}
+
+let arr = [3,3,3,3,3,3];
+console.log(arr.every(hallo, arr)); // true
+
+let arr = [3,4,3,3,7,3];
+console.log(arr.every(hallo, arr)); // false
+*/
+
+//Teacher Solution 2
+/*
+'use strict';
+const hallo = function(varr, val) {
+    return varr.some( function(item) {
+        return val === item;
+    });
+}
+
+let arr = [3,3,3,3,3,3];
+console.log(hallo(arr, 3));     // true
+
+let arr1 = [3,3,2,3,3,3];
+console.log(hallo(arr1, 2));    // true
+
+let arr2 = [3,3,3,3,3,3];
+console.log(hallo(arr2, 4));    // false
+*/
