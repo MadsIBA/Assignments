@@ -1,0 +1,20 @@
+#lcform {
+    position: fixed;
+}
+
+#leftCanvas {
+    position: fixed;
+    left: 10px;
+    outline: 1px;
+    outline-color: black;
+    outline-style: solid;
+    
+}
+
+#rightCanvas {
+    position: absolute;
+    right: 10px;
+    outline: 1px;
+    outline-color: black;
+    outline-style: solid; 
+}

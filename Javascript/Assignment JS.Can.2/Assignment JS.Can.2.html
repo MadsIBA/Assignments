@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="nQuery.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="master.css">
+    <title>Canvas JS.CAN.2</title>
+</head>
+<body>
+    <h1>Canvas JS.CAN.2</h1>
+
+         <form id="leftform" onsubmit="leftPoly();return false;">
+        <label for="width">Enter a width and height in pixels</label>
+        <input id="lcwidth" type="number" min="500" max="" step="1" placeholder="width (500min)" value="500" required />
+        <input id="lcheight" type="number" min="500" max="" step="1" placeholder="height (500min)" value="500" required />
+        <input type="submit">
+    </form><br />
+    <canvas id="leftCanvas"></canvas>
+
+    <canvas id="rightCanvas" width="300" height="500"></canvas>
+</body>
+</html>
