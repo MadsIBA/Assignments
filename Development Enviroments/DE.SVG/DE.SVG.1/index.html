@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="master.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>DE.SVG.1</h1>
+    <h2>Hvad er en viewbox?</h2>
+    <p>I en viewbox har man mulighed for at bruge "Pan" og "Zoom" ligesom med et teleskop<br />
+        Parameter i en viewbox: viewBox = &lt;x&gt; &lt;y&gt; &lt;width&gt; &lt;height&gt;<br />
+        De første 2 numre definere x og y positionen i viewBoxen (Panning)<br />
+        De sidste 2 numre definere størelsen af viewBoxen (Zooming)
+    </p>
+
+    <p class="thick">1. Full View</p>
+    <svg width="100" height="100" viewBox="0 0 100 100">
+        <ellipse cx="50" cy="50" rx="50" ry="50"></ellipse>
+    </svg>
+    <h4>&lt;svg width="100" height="100" viewBox="0 0 100 100"&gt;<br />
+        &lt;ellipse cx="50" cy="50" rx="50" ry="50">&lt;/ellipse&gt;<br />
+        &lt;/svg&gt;<br /><br /></h4>
+
+
+    <p class="thick">2. Zoomed</p>
+    <svg width="100" height="100" viewBox="0 0 50 50">
+        <ellipse cx="50" cy="50" rx="50" ry="50"></ellipse>
+    </svg>
+    <h4>&lt;svg width="100" height="100" viewBox="0 0 50 50"&gt;<br />
+        &lt;ellipse cx="50" cy="50" rx="50" ry="50">&lt;/ellipse&gt;<br />
+        &lt;/svg&gt;<br /><br /></h4>
+
+    <h2>Hvad er en viewport?</h2>
+    <p>Størrelsen på en viewport bestemmer hvad vi kan se i den</p>
+
+    <p class="thick">1. 100px x 100px</p>
+    <svg width="100" height="100">
+        <ellipse cx="50" cy="50" rx="50" ry="50"></ellipse>
+    </svg>
+    <h4>&lt;svg width="100" height="100"&gt;<br />
+        &lt;ellipse cx="50" cy="50" rx="50" ry="50">&lt;/ellipse&gt;<br />
+        &lt;/svg&gt;<br /><br /></h4>
+
+    <p class="thick">2. 50px x 50px</p>
+    <svg class=svg1 width="50" height="50">
+        <ellipse cx="50" cy="50" rx="50" ry="50"></ellipse>
+    </svg>
+    <h4>&lt;svg class=svg1 width="50" height="50"&gt;<br />
+        &lt;ellipse cx="50" cy="50" rx="50" ry="50">&lt;/ellipse&gt;<br />
+        &lt;/svg&gt;<br /></h4>
+
+    <h2>Hvordan relatere de til hinanden?</h2>
+    <p>Viewport er dit vindue (Størrelsen) og Viewbox er dit teleskop (Pan og Zoom)</p>
+
+    <h2>Hvordan skalere man en SVG tegning udseende på en hjemmeside</h2>
+    <p>Ved at gøre brug af både viewport og viewbox</p>
+</body>
+
+</html>

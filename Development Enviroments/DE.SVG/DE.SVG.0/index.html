@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox='0 0 400 200'>
+        <style>
+            svg {
+                border: 1px solid black;
+                height: 200px;
+                width: 400px;
+                background: black;
+            }
+         </style>
+         
+         <ellipse cx='200' cy='100' rx='195' ry='95' 
+         stroke='black' fill='blue' stroke-width='1'/>
+
+         <circle cx='200' cy='100' r='10' 
+         stroke='black' fill='yellow' stroke-width='1'>
+         <animateMotion path='M -190 0 H 0 V 50 V-50 V 0 H 190 H 0 V -50 V 50 V 0 Z' dur='3s' 
+                       repeatCount='indefinite' />
+        </circle>
+
+    </svg>
+
+</body>
+
+</html>
